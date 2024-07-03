@@ -1,0 +1,27 @@
+#turtle party project file
+# by iDenise
+
+import turtle
+
+def square(len):
+    for i in range(4):
+        turtle.color("blue")
+        turtle.forward(len)
+        turtle.right(90)
+def triangle(len):
+    for i in range(3):
+        turtle.forward(len)
+        turtle.left(120)
+        turtle.color("red")
+def house(len):
+    square(len)
+    triangle(len)
+def main():
+    turtle.speed(0)
+    house(80)
+    turtle.penup()
+    turtle.forward (150)
+    turtle.pendown()
+    house(40)
+main()
+turtle.Screen().exitonclick()
